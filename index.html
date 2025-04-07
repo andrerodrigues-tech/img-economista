@@ -1,0 +1,471 @@
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+
+<div class="carousel">
+    
+    
+                  <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="image-container">
+                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-youtube.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                    </div>
+                    <div class="text-container">
+                        <dotlottie-player class="icone-slider" src="https://lottie.host/41ad7aa8-e436-4848-8b47-6b6ae86c6f4e/oAEwVhjGHP.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        <div class="slider-text">
+                            <h3>Bruno em Pauta (YouTube)</h3>
+                            <p>Onde a economia se encontra com a sua curiosidade. Bruno traz análises e reflexões sobre os temas econômicos mais quentes, com um conteúdo fácil de entender e sempre atualizado.</p>
+                            <a href="#">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="image-container">
+                        <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-tv.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                    </div>
+                    <div class="text-container">
+                        <dotlottie-player class="icone-slider" src="https://lottie.host/914dc0ef-8163-44ce-ad4e-584558262477/zfcBGAMUs4.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        <div class="slider-text">
+                            <h3>Bruno em Foco (TV)</h3>
+                            <p>Bruno Mota examina os acontecimentos econômicos mais importantes, oferecendo explicações detalhadas e abordagens práticas para quem quer entender o mercado.</p>
+                            <a href="#">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="image-container">
+                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-jornal.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                    </div>
+                    <div class="text-container">
+                        <dotlottie-player class="icone-slider" src="https://lottie.host/6e7ac8ed-9e26-4b11-81bb-a506659caa8a/V474B6XdGz.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        <div class="slider-text">
+                            <h3>Economia em Foco com Bruno (Jornal)</h3>
+                            <p>Bruno Mota analisa os principais eventos econômicos e oferece uma visão detalhada sobre como as mudanças impactam o mercado global e as finanças pessoais.</p>
+                            <a href="#">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <div class="image-container">
+                        <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-radio.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                    </div>
+                    <div class="text-container">
+                        <dotlottie-player class="icone-slider" src="https://lottie.host/3760e690-6ae0-4ef1-8b1b-fe1abbfe3fd1/NLJVCEZzgx.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        <div class="slider-text">
+                            <h3>Bruno na Frequência (Rádio)</h3>
+                            <p>Bruno Mota traz análises detalhadas e discussões sobre os principais temas econômicos, tudo de forma clara e acessível para você entender o mercado.</p>
+                            <a href="#">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="slide">
+                    <div class="image-container">
+                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-site.png" alt="Sites do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                    </div>
+                    <div class="text-container">
+                        <dotlottie-player class="icone-slider" src="https://lottie.host/c1eb44db-8e11-49f5-b93d-a413ac55be7b/5Rd9EaHOOq.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                        <div class="slider-text">
+                            <h3>Bruno Online (Sites)</h3>
+                            <p>Bruno Mota traz análises precisas, tendências do mercado e insights sobre os temas econômicos mais relevantes, para você ficar sempre bem informado.</p>
+                            <div class="botoes-slider">
+                            <a href="#">Economista</a>
+                            <a href="#">Suas Finanças no Azul</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Setas fora da .carousel -->
+    <button class="arrow left">&#10094;</button>
+    <button class="arrow right">&#10095;</button>
+            
+            <!-- Dots Navigation -->
+            <div class="dots-container">
+                <div class="dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+<style>
+        
+html, body {
+    overflow-x: hidden;
+}
+
+
+/* ===================== CARROSSEL ===================== */
+
+.carousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    display: flex;
+    flex: 0 0 100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    /*border: 4px solid orange;*/
+  }
+
+.elementor-207 .elementor-element.elementor-element-a8e1d9d {
+    display: initial;
+}
+
+/* ===================== IMAGEM NO CARROSSEL ===================== */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+    position: relative; /* necessário pro ::after funcionar */
+    background-image: url('https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/back-midias.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-inline: 20px;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 1; /* sobreposição escura na frente do background, atrás do conteúdo */
+}
+
+.image-container img {
+    width: 100%;
+    /*max-width: 380px;*/
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(72, 63, 199, 0.6);
+     position: relative;
+    z-index: 2; /* garante que a imagem fique por cima da camada escura */
+}
+
+img {
+    display: initial;
+}
+
+.e-con-full, .e-con>.e-con-inner {
+   padding-block-start:0;
+}
+
+.e-con {
+padding-left: 0;
+padding-right: 0;
+}
+
+/* ===================== CONTAINER DE TEXTO ===================== */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+}
+
+.text-container h3 {
+    font-size: 1.8rem;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    padding-block: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.icone-slider {
+    width: 200px;
+    height: 200px;
+}
+
+/* ===================== PONTOS ===================== */
+
+.dots {
+  position: absolute;
+  bottom: 7%; /* Posiciona embaixo */
+  left: 75%;    /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajuste fino para centralização */
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  /* Estilo opcional para visualização */
+  /* border: 2px solid red; */
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(218, 11, 11, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
+/* ===================== SETAS ===================== */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: .9rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+
+/* ===================== BOTÃO ===================== */
+.botoes-slider {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+a {
+    display: inline-block;
+    padding: 9px 24px;
+    background-color: #5092d9;
+    color: white;
+    font-size: .7rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+a:hover {
+    transform: scale(1.05);
+    background-color: #5092d9;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ===================== RESPONSIVIDADE ===================== */
+
+@media (max-width: 1024px) {
+    
+    .slide {
+        /*border: 5px solid black;*/
+    }
+
+    .carousel {
+        width: 100%;
+    }
+    
+    .text-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .icone-slider {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .arrow {
+        top: 52%;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    
+     .slide {
+        flex: 0 0 100%;
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+    }
+    
+    .icone-slider {
+        width: 140px;
+        height: 140px;
+    }
+    
+     .text-container h3 {
+        font-size: 1.3rem;
+    }
+    
+    .text-container p {
+        font-size: 0.9rem;
+        padding-block: 0px;
+    }
+    
+    a {
+        padding: 6px 24px;
+        font-size: .6rem;
+        margin-bottom: 40px;
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 50vh;
+        /*padding: 50px;*/
+        margin-inline: auto;
+    }
+    
+     .image-container img {
+       /*max-width: 300px;*/
+       max-width: 230px;
+    }
+    
+    .text-container {
+        width: 100%;
+        height: 50vh;
+        margin-inline: auto;
+    }
+    
+    .arrow {
+        top: 53%;
+    }
+    
+    .dots {
+        display: none;
+    }
+    
+     .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+    </style>
+        
+      <script>
+    let currentSlide = 0;
+    let startX = 0;
+    let isDragging = false;
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index, instant = true) {
+        currentSlide = (index + slides.length) % slides.length;
+        const slideWidth = slides[0].offsetWidth;
+        carousel.style.transition = instant ? "none" : "transform 0.5s ease-in-out";
+        carousel.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+        
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentSlide].classList.add('active');
+    }
+
+    dots.forEach((dot, i) =>
+        dot.addEventListener('click', () => showSlide(i, true))
+    );
+
+    function handleDragEnd(dx) {
+        const slideWidth = slides[0].offsetWidth;
+        if (dx > slideWidth / 2) currentSlide--;
+        if (dx < -slideWidth / 2) currentSlide++;
+        showSlide(currentSlide, true);
+    }
+
+    function handlePointerStart(e) {
+        startX = e.pageX || e.touches[0].pageX;
+        isDragging = true;
+    }
+
+    function handlePointerMove(e) {
+        if (!isDragging) return;
+        const dx = (e.pageX || e.touches[0].pageX) - startX;
+        carousel.style.transition = "none";
+        carousel.style.transform = `translateX(${-(currentSlide * slides[0].offsetWidth) + dx}px)`;
+    }
+
+    function handlePointerEnd(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        const dx = (e.pageX || e.changedTouches[0].pageX) - startX;
+        handleDragEnd(dx);
+    }
+
+    ['mousedown', 'touchstart'].forEach(evt => carousel.addEventListener(evt, handlePointerStart));
+    ['mousemove', 'touchmove'].forEach(evt => carousel.addEventListener(evt, handlePointerMove));
+    ['mouseup', 'mouseleave', 'touchend'].forEach(evt => carousel.addEventListener(evt, handlePointerEnd));
+
+    // Recalcula a posição do carrossel ao redimensionar a tela
+    window.addEventListener('resize', () => {
+        showSlide(currentSlide, true);
+    });
+
+    // Setas com mudança instantânea
+    document.querySelector('.arrow.left').addEventListener('click', () => {
+        showSlide(currentSlide - 1, true);
+    });
+
+    document.querySelector('.arrow.right').addEventListener('click', () => {
+        showSlide(currentSlide + 1, true);
+    });
+
+    showSlide(currentSlide);
+</script>
