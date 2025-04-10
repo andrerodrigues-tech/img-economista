@@ -1,155 +1,179 @@
+<!-- Script do player Lottie -->
 <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
-
-<div class="carousel">
-    
-    
-                  <!-- Slide 1 -->
-                <div class="slide">
-                    <div class="image-container">
-                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-youtube.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
-                    </div>
-                    <div class="text-container">
-                        <dotlottie-player class="icone-slider" src="https://lottie.host/41ad7aa8-e436-4848-8b47-6b6ae86c6f4e/oAEwVhjGHP.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-                        <div class="slider-text">
-                            <h3>Bruno em Pauta (YouTube)</h3>
-                            <p>Onde a economia se encontra com a sua curiosidade. Bruno traz análises e reflexões sobre os temas econômicos mais quentes, com um conteúdo fácil de entender e sempre atualizado.</p>
-                            <a href="#">SAIBA MAIS</a>
-                        </div>
-                    </div>
+<!-- Carrossel Encapsulado com Prefixo Único -->
+<div id="economista-carousel-wrapper" class="economista-carousel-wrapper">
+    <div class="economista-carousel-container">
+        <div class="economista-carousel">
+            <!-- Slide 1 -->
+            <div class="economista-slide">
+                <div class="economista-image-container">
+                    <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-youtube.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
                 </div>
-                
-                <!-- Slide 2 -->
-                <div class="slide">
-                    <div class="image-container">
-                        <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-tv.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
-                    </div>
-                    <div class="text-container">
-                        <dotlottie-player class="icone-slider" src="https://lottie.host/914dc0ef-8163-44ce-ad4e-584558262477/zfcBGAMUs4.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-                        <div class="slider-text">
-                            <h3>Bruno em Foco (TV)</h3>
-                            <p>Bruno Mota examina os acontecimentos econômicos mais importantes, oferecendo explicações detalhadas e abordagens práticas para quem quer entender o mercado.</p>
-                            <a href="#">SAIBA MAIS</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 3 -->
-                <div class="slide">
-                    <div class="image-container">
-                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-jornal.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
-                    </div>
-                    <div class="text-container">
-                        <dotlottie-player class="icone-slider" src="https://lottie.host/6e7ac8ed-9e26-4b11-81bb-a506659caa8a/V474B6XdGz.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-                        <div class="slider-text">
-                            <h3>Economia em Foco com Bruno (Jornal)</h3>
-                            <p>Bruno Mota analisa os principais eventos econômicos e oferece uma visão detalhada sobre como as mudanças impactam o mercado global e as finanças pessoais.</p>
-                            <a href="#">SAIBA MAIS</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 4 -->
-                <div class="slide">
-                    <div class="image-container">
-                        <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-radio.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
-                    </div>
-                    <div class="text-container">
-                        <dotlottie-player class="icone-slider" src="https://lottie.host/3760e690-6ae0-4ef1-8b1b-fe1abbfe3fd1/NLJVCEZzgx.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-                        <div class="slider-text">
-                            <h3>Bruno na Frequência (Rádio)</h3>
-                            <p>Bruno Mota traz análises detalhadas e discussões sobre os principais temas econômicos, tudo de forma clara e acessível para você entender o mercado.</p>
-                            <a href="#">SAIBA MAIS</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Slide 5 -->
-                <div class="slide">
-                    <div class="image-container">
-                        <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-site.png" alt="Sites do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
-                    </div>
-                    <div class="text-container">
-                        <dotlottie-player class="icone-slider" src="https://lottie.host/c1eb44db-8e11-49f5-b93d-a413ac55be7b/5Rd9EaHOOq.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-                        <div class="slider-text">
-                            <h3>Bruno Online (Sites)</h3>
-                            <p>Bruno Mota traz análises precisas, tendências do mercado e insights sobre os temas econômicos mais relevantes, para você ficar sempre bem informado.</p>
-                            <div class="botoes-slider">
-                            <a href="#">Economista</a>
-                            <a href="#">Suas Finanças no Azul</a>
-                            </div>
-                        </div>
+                <div class="economista-text-container">
+                    <dotlottie-player class="economista-icone-slider" src="https://lottie.host/41ad7aa8-e436-4848-8b47-6b6ae86c6f4e/oAEwVhjGHP.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <div class="economista-slider-text">
+                        <h3>Bruno em Pauta (YouTube)</h3>
+                        <p>Onde a economia se encontra com a sua curiosidade. Bruno traz análises e reflexões sobre os temas econômicos mais quentes, com um conteúdo fácil de entender e sempre atualizado.</p>
+                        <a class="economista-btn-slider-custom" href="#">saiba mais</a>
                     </div>
                 </div>
             </div>
             
+            <!-- Slide 2 -->
+            <div class="economista-slide">
+                <div class="economista-image-container">
+                    <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-tv.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                </div>
+                <div class="economista-text-container">
+                    <dotlottie-player class="economista-icone-slider" src="https://lottie.host/914dc0ef-8163-44ce-ad4e-584558262477/zfcBGAMUs4.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <div class="economista-slider-text">
+                        <h3>Bruno em Foco (TV)</h3>
+                        <p>Bruno Mota examina os acontecimentos econômicos mais importantes, oferecendo explicações detalhadas e abordagens práticas para quem quer entender o mercado.</p>
+                        <a class="economista-btn-slider-custom" href="#">saiba mais</a>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Setas fora da .carousel -->
-    <button class="arrow left">&#10094;</button>
-    <button class="arrow right">&#10095;</button>
+            <!-- Slide 3 -->
+            <div class="economista-slide">
+                <div class="economista-image-container">
+                    <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-jornal.png" alt="Foto do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                </div>
+                <div class="economista-text-container">
+                    <dotlottie-player class="economista-icone-slider" src="https://lottie.host/6e7ac8ed-9e26-4b11-81bb-a506659caa8a/V474B6XdGz.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <div class="economista-slider-text">
+                        <h3>Economia em Foco com Bruno (Jornal)</h3>
+                        <p>Bruno Mota analisa os principais eventos econômicos e oferece uma visão detalhada sobre como as mudanças impactam o mercado global e as finanças pessoais.</p>
+                        <a class="economista-btn-slider-custom" href="#">saiba mais</a>
+                    </div>
+                </div>
+            </div>
             
-            <!-- Dots Navigation -->
-            <div class="dots-container">
-                <div class="dots">
-                    <span class="dot active" onclick="goToSlide(0)"></span>
-                    <span class="dot" onclick="goToSlide(1)"></span>
-                    <span class="dot" onclick="goToSlide(2)"></span>
-                    <span class="dot" onclick="goToSlide(3)"></span>
-                    <span class="dot" onclick="goToSlide(4)"></span>
+            <!-- Slide 4 -->
+            <div class="economista-slide">
+                <div class="economista-image-container">
+                    <figure><img src="https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/bruno-radio.gif" alt="Gif do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                </div>
+                <div class="economista-text-container">
+                    <dotlottie-player class="economista-icone-slider" src="https://lottie.host/3760e690-6ae0-4ef1-8b1b-fe1abbfe3fd1/NLJVCEZzgx.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <div class="economista-slider-text">
+                        <h3>Bruno na Frequência (Rádio)</h3>
+                        <p>Bruno Mota traz análises detalhadas e discussões sobre os principais temas econômicos, tudo de forma clara e acessível para você entender o mercado.</p>
+                        <a class="economista-btn-slider-custom" href="#">saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="economista-slide">
+                <div class="economista-image-container">
+                    <figure><img src="https://raw.githubusercontent.com/andrerodrigues-tech/img-economista/refs/heads/main/bruno-site.png" alt="Sites do economista Bruno Mota, especialista em finanças e desenvolvimento regional"></figure>
+                </div>
+                <div class="economista-text-container">
+                    <dotlottie-player class="economista-icone-slider" src="https://lottie.host/c1eb44db-8e11-49f5-b93d-a413ac55be7b/5Rd9EaHOOq.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <div class="economista-slider-text">
+                        <h3>Bruno Online (Sites)</h3>
+                        <p>Bruno Mota traz análises precisas, tendências do mercado e insights sobre os temas econômicos mais relevantes, para você ficar sempre bem informado.</p>
+                        <div class="economista-botoes-slider">
+                            <a class="economista-btn-slider-custom" href="#">economista</a>
+                            <a class="economista-btn-slider-custom" href="#">suas finanças no azul</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
         
+        <!-- Setas de navegação -->
+        <button class="economista-arrow economista-left">&#10094;</button>
+        <button class="economista-arrow economista-right">&#10095;</button>
+        
+        <!-- Dots Navigation -->
+        <div class="economista-dots-container">
+            <div class="economista-dots">
+                <span class="economista-dot active" data-slide="0"></span>
+                <span class="economista-dot" data-slide="1"></span>
+                <span class="economista-dot" data-slide="2"></span>
+                <span class="economista-dot" data-slide="3"></span>
+                <span class="economista-dot" data-slide="4"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <style>
-        
-html, body {
-    overflow-x: hidden;
+
+html, body, .elementor, .elementor-section, .elementor-container {
+  height: 100%;
 }
 
 
-/* ===================== CARROSSEL ===================== */
+ Estilos encapsulados para evitar conflitos no WordPress 
 
-.carousel {
+.e-con-full, .e-con>.e-con-inner {
+    padding-block-end: 0;
+    padding-block-start: 0;
+}
+
+.elementor-kit-7 a {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.elementor-widget-container .economista-carousel-wrapper {
+  height: 100vh !important;
+  min-height: 400px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.elementor a {
+    text-transform: capitalize;
+}
+
+
+.economista-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.economista-carousel {
     display: flex;
     width: 100%;
-    transition: transform 0.8s ease-in-out;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 
-.slide {
+.economista-slide {
     display: flex;
     flex: 0 0 100%;
-    text-align: center;
     width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    /*border: 4px solid orange;*/
-  }
-
-.elementor-207 .elementor-element.elementor-element-a8e1d9d {
-    display: initial;
+    height: 100%;
+    position: relative;
 }
 
-/* ===================== IMAGEM NO CARROSSEL ===================== */
-.image-container {
+.economista-image-container, .economista-text-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
     overflow: hidden;
-    height: auto;
-    position: relative; /* necessário pro ::after funcionar */
+}
+
+.economista-image-container {
     background-image: url('https://media.githubusercontent.com/media/andrerodrigues-tech/img-economista/main/back-midias.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-inline: 20px;
+    padding: 20px;
 }
 
-.image-container::after {
+.economista-image-container::after {
     content: "";
     position: absolute;
     top: 0;
@@ -158,314 +182,729 @@ html, body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     pointer-events: none;
-    z-index: 1; /* sobreposição escura na frente do background, atrás do conteúdo */
+    z-index: 1;
 }
 
-.image-container img {
+.economista-image-container figure {
     width: 100%;
-    /*max-width: 380px;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+}
+
+.economista-image-container img {
     max-width: 90%;
-    object-fit: cover;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(72, 63, 199, 0.6);
-     position: relative;
-    z-index: 2; /* garante que a imagem fique por cima da camada escura */
+    position: relative;
+    z-index: 2;
 }
 
-img {
-    display: initial;
-}
-
-.e-con-full, .e-con>.e-con-inner {
-   padding-block-start:0;
-}
-
-.e-con {
-padding-left: 0;
-padding-right: 0;
-}
-
-/* ===================== CONTAINER DE TEXTO ===================== */
-.text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: auto;
+.economista-text-container {
     padding: 20px;
+    text-align: center;
 }
 
-.text-container h3 {
+.economista-slider-text {
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+}
+
+.economista-text-container h3 {
     font-size: 1.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
-.text-container p {
+.economista-text-container p {
     font-size: 1.2rem;
-    padding-block: 20px;
+    padding: 15px 0;
     color: rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+    margin: 0;
 }
 
-.icone-slider {
-    width: 200px;
-    height: 200px;
+.economista-icone-slider {
+    width: 180px;
+    height: 180px;
+    min-height: 100px;
 }
 
-/* ===================== PONTOS ===================== */
-
-.dots {
-  position: absolute;
-  bottom: 7%; /* Posiciona embaixo */
-  left: 75%;    /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajuste fino para centralização */
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  /* Estilo opcional para visualização */
-  /* border: 2px solid red; */
+.economista-dots-container {
+    position: absolute;
+    width: 100%;
+    bottom: 7%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
 }
 
-.dot {
+.economista-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.economista-dot {
     width: 12px;
     height: 12px;
     background-color: rgba(218, 11, 11, 0.6);
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.dot.active {
+.economista-dot.active {
     background-color: white;
     transform: scale(1.2);
 }
 
-
-/* ===================== SETAS ===================== */
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  border: none;
-  color: white;
-  font-size: .9rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 50px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.economista-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-.arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateY(-50%) scale(1.05);
+.economista-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.05);
 }
 
-.arrow.left {
-  left: 15px;
+.economista-left {
+    left: 15px;
 }
 
-.arrow.right {
-  right: 15px;
+.economista-right {
+    right: 15px;
 }
 
-
-/* ===================== BOTÃO ===================== */
-.botoes-slider {
+.economista-botoes-slider {
     display: flex;
     justify-content: center;
     gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-a {
+.economista-btn-slider-custom {
     display: inline-block;
     padding: 9px 24px;
     background-color: #5092d9;
     color: white;
-    font-size: .7rem;
+    font-size: 0.7rem;
     text-decoration: none;
-    text-transform: uppercase;
     border-radius: 5px;
     transition: transform 0.3s ease;
     will-change: transform;
     backface-visibility: hidden;
+    margin-top: 5px;
 }
 
-a:hover {
+.economista-btn-slider-custom:hover {
     transform: scale(1.05);
     background-color: #5092d9;
     color: white;
     text-decoration: none;
 }
 
-
 /* ===================== RESPONSIVIDADE ===================== */
-
-@media (max-width: 1024px) {
-    
-    .slide {
-        /*border: 5px solid black;*/
-    }
-
-    .carousel {
-        width: 100%;
+/* Telas muito grandes (TVs, monitores grandes) */
+@media (min-width: 1921px) {
+    .economista-text-container h3 {
+        font-size: 2.5rem;
     }
     
-    .text-container h3 {
-        font-size: 1.5rem;
+    .economista-text-container p {
+        font-size: 1.6rem;
+        padding: 25px 0;
     }
-
-    .text-container p {
+    
+    .economista-icone-slider {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .economista-btn-slider-custom {
         font-size: 1rem;
-    }
-
-    .icone-slider {
-        width: 170px;
-        height: 170px;
+        padding: 14px 32px;
     }
     
-    .arrow {
-        top: 52%;
+    .economista-dot {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .economista-arrow {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
     }
 }
 
-
-
-@media (max-width: 767px) {
-    
-     .slide {
-        flex: 0 0 100%;
-        display: flex;
-        height: 100vh;
-        flex-direction: column;
+/* Telas grandes (Desktops) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .economista-text-container h3 {
+        font-size: 2.2rem;
     }
     
-    .icone-slider {
+    .economista-text-container p {
+        font-size: 1.2rem;
+    }
+    
+    .economista-icone-slider {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .economista-btn-slider-custom {
+        font-size: 0.9rem;
+        padding: 8px 28px;
+    }
+}
+
+/* Laptops e desktops menores */
+@media (max-width: 1440px) {
+    .economista-text-container h3 {
+        font-size: 1.7rem;
+    }
+    
+    .economista-text-container p {
+        font-size: 1.1rem;
+        padding: 15px 0;
+    }
+    
+    .economista-icone-slider {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Tablets e notebooks pequenos */
+@media (max-width: 1024px) {
+    .economista-text-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .economista-text-container p {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    .economista-icone-slider {
         width: 140px;
         height: 140px;
     }
     
-     .text-container h3 {
-        font-size: 1.3rem;
-    }
-    
-    .text-container p {
-        font-size: 0.9rem;
-        padding-block: 0px;
-    }
-    
-    a {
-        padding: 6px 24px;
-        font-size: .6rem;
-        margin-bottom: 40px;
-    }
-
-    .carousel {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .image-container {
-        width: 100%;
-        height: 50vh;
-        /*padding: 50px;*/
-        margin-inline: auto;
-    }
-    
-     .image-container img {
-       /*max-width: 300px;*/
-       max-width: 230px;
-    }
-    
-    .text-container {
-        width: 100%;
-        height: 50vh;
-        margin-inline: auto;
-    }
-    
-    .arrow {
-        top: 53%;
-    }
-    
-    .dots {
-        display: none;
-    }
-    
-     .dot {
-        width: 10px;
-        height: 10px;
+    .economista-btn-slider-custom {
+        padding: 8px 20px;
     }
 }
 
-    </style>
+/* Tablets */
+@media (max-width: 900px) {
+    .economista-icone-slider {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .economista-text-container p {
+        padding: 8px 0;
+    }
+}
+
+/* Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+    .economista-slide {
+        flex-direction: column;
+    }
+    
+    .economista-image-container, .economista-text-container {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .economista-text-container {
+        padding: 10px;
+    }
+    
+    .economista-text-container h3 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    
+    .economista-text-container p {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+    
+    .economista-icone-slider {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5px;
+    }
+    
+    .economista-dots-container {
+        bottom: 47%;
+    }
+    
+    .economista-btn-slider-custom {
+        padding: 7px 18px;
+        font-size: 0.65rem;
+        margin-top: 3px;
+    }
+    
+    .economista-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Celulares grandes/médios */
+@media (max-width: 576px) {
+    .economista-image-container {
+        padding: 10px;
+    }
+    
+    .economista-image-container img {
+        max-width: 85%;
+        max-height: 85%;
+    }
+    
+    .economista-text-container h3 {
+        font-size: 1.2rem;
+    }
+    
+    .economista-text-container p {
+        font-size: 0.85rem;
+        padding: 5px 0;
+    }
+    
+    .economista-icone-slider {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .economista-btn-slider-custom {
+        padding: 6px 16px;
+        font-size: 0.6rem;
+    }
+    
+    .economista-botoes-slider {
+        gap: 8px;
+    }
+    
+    .economista-dots {
+        gap: 6px;
+    }
+    
+    .economista-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .economista-arrow {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 375px) {
+    .economista-text-container {
+        padding: 5px;
+    }
+    
+    .economista-icone-slider {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .economista-text-container h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0;
         
-      <script>
-    let currentSlide = 0;
-    let startX = 0;
-    let isDragging = false;
-    const carousel = document.querySelector('.carousel');
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
+    }
+    
+    .economista-text-container p {
+        font-size: 0.8rem;
+        padding: 3px 0;
+    }
+    
+    .economista-btn-slider-custom {
+        padding: 5px 12px;
+        font-size: 0.55rem;
+    }
+    
+    .economista-dots-container {
+         bottom: 47%;
+    }
+}
 
-    function showSlide(index, instant = true) {
-        currentSlide = (index + slides.length) % slides.length;
-        const slideWidth = slides[0].offsetWidth;
-        carousel.style.transition = instant ? "none" : "transform 0.5s ease-in-out";
-        carousel.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+/* Celulares muito pequenos */
+@media (max-width: 320px) {
+    .economista-text-container h3 {
+        font-size: 1rem;
+    }
+    
+    .economista-text-container p {
+        font-size: 0.75rem;
+        padding: 2px 0;
+    }
+    
+    .economista-icone-slider {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .economista-arrow {
+        width: 25px;
+        height: 25px;
+        font-size: 0.7rem;
+    }
+}
+
+/* Orientações específicas */
+@media (max-height: 600px) {
+    .economista-icone-slider {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .economista-text-container h3 {
+        font-size: 1.1rem;
+        margin: 3px 0;
+    }
+    
+    .economista-text-container p {
+        font-size: 0.8rem;
+        padding: 3px 0;
+    }
+    
+    .economista-btn-slider-custom {
+        padding: 5px 15px;
+        margin-top: 3px;
+    }
+    
+    .economista-dots-container {
+        bottom: 10px;
+    }
+}
+
+/* Landscape específico para dispositivos pequenos */
+@media (max-height: 500px) and (orientation: landscape) {
+    .economista-slide {
+        flex-direction: row;
+    }
+    
+    .economista-image-container, .economista-text-container {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .economista-text-container {
+        padding: 10px;
+    }
+    
+    .economista-icone-slider {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+    
+    .economista-text-container h3 {
+        font-size: 1rem;
+        margin: 2px 0;
+    }
+    
+    .economista-text-container p {
+        font-size: 0.75rem;
+        padding: 2px 0;
+    }
+    
+    .economista-btn-slider-custom {
+        padding: 4px 12px;
+        font-size: 0.5rem;
+        margin-top: 2px;
+    }
+    
+    .economista-botoes-slider {
+        gap: 6px;
+    }
+    
+    .economista-dots-container {
+        bottom: 5px;
+    }
+}
+
+
+@media (max-height: 400px) {
+    .economista-dots-container {
+        bottom: 2px;
+    }
+    
+    .economista-dot {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+
+.elementor-widget-container .economista-carousel-wrapper {
+    height: 80vh; 
+    min-height: 400px;
+}
+</style>
+
+<script>
+(function() {
+   
+    function initEconomistaCarousel() {
+      
+        const carouselWrapper = document.querySelector('.economista-carousel-wrapper');
+        if (!carouselWrapper) return;
         
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[currentSlide].classList.add('active');
+      
+        let currentSlide = 0;
+        const carousel = document.querySelector('.economista-carousel');
+        const slides = document.querySelectorAll('.economista-slide');
+        const dots = document.querySelectorAll('.economista-dot');
+        const totalSlides = slides.length;
+        let autoplayInterval;
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let isSwiping = false;
+        let isTransitioning = false;
+        
+     
+        function showSlide(index, smooth = true) {
+            if (isTransitioning) return;
+            
+            isTransitioning = true;
+            
+         
+            currentSlide = (index + totalSlides) % totalSlides;
+            
+         
+            const offset = -currentSlide * 100;
+            carousel.style.transition = smooth ? "transform 0.5s ease-in-out" : "none";
+            carousel.style.transform = `translateX(${offset}%)`;
+            
+          
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+            
+            
+            setTimeout(() => {
+                isTransitioning = false;
+            }, smooth ? 500 : 50);
+        }
+        
+     
+        dots.forEach((dot) => {
+            dot.addEventListener('click', function() {
+                const slideIndex = parseInt(this.getAttribute('data-slide'));
+                showSlide(slideIndex);
+                resetAutoplay();
+            });
+        });
+        
+       
+        document.querySelector('.economista-left').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+            resetAutoplay();
+        });
+        
+        document.querySelector('.economista-right').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+            resetAutoplay();
+        });
+        
+       
+        function handleTouchStart(e) {
+            touchStartX = e.touches[0].clientX;
+            isSwiping = true;
+           
+            carousel.style.transition = "none";
+        }
+        
+        function handleTouchMove(e) {
+            if (!isSwiping) return;
+            
+            touchEndX = e.touches[0].clientX;
+            const diffX = touchEndX - touchStartX;
+            const percentMove = (diffX / window.innerWidth) * 100;
+            const currentOffset = -currentSlide * 100;
+            
+            
+            const resistance = 0.4;
+            const limitedPercentMove = 
+                currentSlide === 0 && percentMove > 0 ? percentMove * resistance :
+                currentSlide === totalSlides - 1 && percentMove < 0 ? percentMove * resistance :
+                percentMove;
+            
+           
+            carousel.style.transform = `translateX(${currentOffset + limitedPercentMove}%)`;
+        }
+        
+        function handleTouchEnd() {
+            if (!isSwiping) return;
+            isSwiping = false;
+            
+           
+            carousel.style.transition = "transform 0.5s ease-in-out";
+            
+            const diffX = touchEndX - touchStartX;
+            const threshold = window.innerWidth * 0.15; 
+            
+            if (Math.abs(diffX) > threshold) {
+                if (diffX > 0) {
+                  
+                    showSlide(currentSlide - 1);
+                } else {
+                   
+                    showSlide(currentSlide + 1);
+                }
+            } else {
+               
+                showSlide(currentSlide);
+            }
+            
+            resetAutoplay();
+        }
+        
+       
+        const carouselContainer = document.querySelector('.economista-carousel-container');
+        carouselContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+        carouselContainer.addEventListener('touchmove', handleTouchMove, { passive: true });
+        carouselContainer.addEventListener('touchend', handleTouchEnd);
+        
+       
+        function startAutoplay() {
+            clearInterval(autoplayInterval); 
+            autoplayInterval = setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        }
+        
+        
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+        
+       
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+           
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+               
+                carousel.style.transition = "none";
+               
+                showSlide(currentSlide, false);
+              
+                setTimeout(() => {
+                    carousel.style.transition = "transform 0.5s ease-in-out";
+                }, 50);
+            }, 100);
+        });
+        
+        
+        window.addEventListener('orientationchange', () => {
+           
+            setTimeout(() => {
+                carousel.style.transition = "none";
+                showSlide(currentSlide, false);
+                setTimeout(() => {
+                    carousel.style.transition = "transform 0.5s ease-in-out";
+                }, 100);
+            }, 200);
+        });
+        
+      
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                showSlide(currentSlide - 1);
+                resetAutoplay();
+            } else if (e.key === 'ArrowRight') {
+                showSlide(currentSlide + 1);
+                resetAutoplay();
+            }
+        });
+        
+       
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                clearInterval(autoplayInterval);
+            } else {
+                startAutoplay();
+            }
+        });
+        
+     
+        showSlide(0, false);
+        startAutoplay();
+        
+      
+        carousel.addEventListener('transitionend', () => {
+            isTransitioning = false;
+        });
     }
 
-    dots.forEach((dot, i) =>
-        dot.addEventListener('click', () => showSlide(i, true))
-    );
-
-    function handleDragEnd(dx) {
-        const slideWidth = slides[0].offsetWidth;
-        if (dx > slideWidth / 2) currentSlide--;
-        if (dx < -slideWidth / 2) currentSlide++;
-        showSlide(currentSlide, true);
+  
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initEconomistaCarousel);
+    } else {
+        
+        initEconomistaCarousel();
     }
+    
 
-    function handlePointerStart(e) {
-        startX = e.pageX || e.touches[0].pageX;
-        isDragging = true;
+    if (window.elementorFrontend) {
+        if (typeof elementorFrontend.hooks !== 'undefined') {
+            elementorFrontend.hooks.addAction('frontend/element_ready/global', function() {
+                initEconomistaCarousel();
+            });
+        }
     }
-
-    function handlePointerMove(e) {
-        if (!isDragging) return;
-        const dx = (e.pageX || e.touches[0].pageX) - startX;
-        carousel.style.transition = "none";
-        carousel.style.transform = `translateX(${-(currentSlide * slides[0].offsetWidth) + dx}px)`;
-    }
-
-    function handlePointerEnd(e) {
-        if (!isDragging) return;
-        isDragging = false;
-        const dx = (e.pageX || e.changedTouches[0].pageX) - startX;
-        handleDragEnd(dx);
-    }
-
-    ['mousedown', 'touchstart'].forEach(evt => carousel.addEventListener(evt, handlePointerStart));
-    ['mousemove', 'touchmove'].forEach(evt => carousel.addEventListener(evt, handlePointerMove));
-    ['mouseup', 'mouseleave', 'touchend'].forEach(evt => carousel.addEventListener(evt, handlePointerEnd));
-
-    // Recalcula a posição do carrossel ao redimensionar a tela
-    window.addEventListener('resize', () => {
-        showSlide(currentSlide, true);
-    });
-
-    // Setas com mudança instantânea
-    document.querySelector('.arrow.left').addEventListener('click', () => {
-        showSlide(currentSlide - 1, true);
-    });
-
-    document.querySelector('.arrow.right').addEventListener('click', () => {
-        showSlide(currentSlide + 1, true);
-    });
-
-    showSlide(currentSlide);
+    
+ 
+    const checkInterval = setInterval(function() {
+        if (document.querySelector('.economista-carousel-wrapper')) {
+            initEconomistaCarousel();
+            clearInterval(checkInterval);
+        }
+    }, 500);
+    
+  
+    setTimeout(function() {
+        clearInterval(checkInterval);
+    }, 10000);
+})();
 </script>
